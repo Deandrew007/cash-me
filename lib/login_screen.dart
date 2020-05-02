@@ -24,7 +24,7 @@ Widget _buildlayout() {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Container(
-          height: 325,
+          height: 300,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(
@@ -70,20 +70,44 @@ Widget _buildlayout() {
                           )),
                     ),
                   )),
-              SizedBox(height: 40, width: 80,
-              child: RaisedButton(
+              Padding(
+                padding: const EdgeInsets.only(top:5, left: 220),
+                child: Text('Forgot Password',
+                    style: TextStyle(
+                        color: Hexcolor("#2B2D80"),
+                        decoration: TextDecoration.underline,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold)),
+              ),
+              SizedBox(height: 40),
+              RaisedButton(
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  side: BorderSide(color: Hexcolor("#2B2D80"))
-                ),
+                    borderRadius: BorderRadius.circular(25),
+                    side: BorderSide(color: Hexcolor("#2B2D80"))),
                 onPressed: () {},
                 textColor: Colors.white,
                 color: Hexcolor("#2B2D80"),
-                child: const Text('Sign In',
-                    style: TextStyle(fontSize: 20)),
+                padding: const EdgeInsets.only(
+                    top: 20, bottom: 20, left: 80, right: 80),
+                child: const Text('Sign In', style: TextStyle(fontSize: 16)),
               ),
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Don\'t have an account? ',
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                    children: <TextSpan>[
+                      TextSpan(
+                          text: 'Sign up here',
+                          style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              fontWeight: FontWeight.bold,
+                              color: Hexcolor('#2B2D80'))),
+                    ],
+                  ),
+                ),
               ),
-           
             ],
           ),
         ),
