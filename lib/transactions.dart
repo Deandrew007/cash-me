@@ -11,38 +11,138 @@ class _TransactionsPageState extends State<TransactionsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Hexcolor("#2B2D80"),
-      body: _buildBody(),
-      bottomNavigationBar: _buildNavBar(),
+      body: Stack(
+        children: <Widget>[
+          _buildBody(),
+        ],
+      ),
+      // bottomNavigationBar: _buildNavBar(),
     );
   }
 
   Widget _buildBody() {
     return Container(
-        margin: EdgeInsets.only(top: 56),
+        margin: EdgeInsets.only(top: 200),
         height: double.maxFinite,
         width: double.maxFinite,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
-              topRight: Radius.circular(48),
-              topLeft: Radius.circular(48),
-            ),
-            color: Hexcolor("#EAEAEA")),
-        child: ListView(children: const <Widget>[
-          Card(
-      child: ListTile(
-        leading: FlutterLogo(size: 72.0),
-        title: Text('Three-line ListTile'),
-        subtitle: Text(
-          'A sufficiently long subtitle warrants three lines.'
+          borderRadius: BorderRadius.only(
+            topRight: Radius.circular(48),
+            topLeft: Radius.circular(48),
+          ),
+          color: Colors.grey[200],
         ),
-        trailing: Icon(Icons.more_vert),
-        isThreeLine: true,
-      ),
-    ),
+        child: Column(children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Text(
+                    'Transactions',
+                    style: TextStyle(
+                      color: Hexcolor("#2B2D80"),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22,
+                    ),
+                  ),
+                  Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 100),
+                        child: RichText(
+                            text: TextSpan(
+                          text: "Sort by ",
+                          style: TextStyle(
+                              color: Hexcolor("#2B2D80"), fontSize: 18),
+                          children: <TextSpan>[
+                            TextSpan(
+                                text: 'Recent',
+                                style: TextStyle(
+                                    color: Hexcolor('#F49825'), fontSize: 18)),
+                          ],
+                        )),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10, left: 100),
+                        child: Text(
+                          'View All',
+                          style: TextStyle(
+                            color: Hexcolor("#2B2D80"),
+                            decoration: TextDecoration.underline,
+                            fontSize: 14,
+                          ),
+                        ),
+                      )
+                    ],
+                  )
+                ]),
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ListView(
+                children: const <Widget>[
+                  Card(
+                    child: ListTile(
+                      leading: FlutterLogo(size: 56.0),
+                      title: Text('Two-line ListTile'),
+                      subtitle: Text('Here is a second line'),
+                      trailing: Icon(Icons.more_vert),
+                    ),
+                  ),
+                  Card(
+                    child: ListTile(
+                      leading: FlutterLogo(size: 56.0),
+                      title: Text('Two-line ListTile'),
+                      subtitle: Text('Here is a second line'),
+                      trailing: Icon(Icons.more_vert),
+                    ),
+                  ),
+                  Card(
+                    child: ListTile(
+                      leading: FlutterLogo(size: 56.0),
+                      title: Text('Two-line ListTile'),
+                      subtitle: Text('Here is a second line'),
+                      trailing: Icon(Icons.more_vert),
+                    ),
+                  ),
+                  Card(
+                    child: ListTile(
+                      leading: FlutterLogo(size: 56.0),
+                      title: Text('Two-line ListTile'),
+                      subtitle: Text('Here is a second line'),
+                      trailing: Icon(Icons.more_vert),
+                    ),
+                  ),
+                  Card(
+                    child: ListTile(
+                      leading: FlutterLogo(size: 56.0),
+                      title: Text('Two-line ListTile'),
+                      subtitle: Text('Here is a second line'),
+                      trailing: Icon(Icons.more_vert),
+                    ),
+                  ),
+                     Card(
+                    child: ListTile(
+                      leading: FlutterLogo(size: 56.0),
+                      title: Text('Two-line ListTile'),
+                      subtitle: Text('Here is a second line'),
+                      trailing: Icon(Icons.more_vert),
+                    ),
+                  ),
+                     Card(
+                    child: ListTile(
+                      leading: FlutterLogo(size: 56.0),
+                      title: Text('Two-line ListTile'),
+                      subtitle: Text('Here is a second line'),
+                      trailing: Icon(Icons.more_vert),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          )
         ]));
-  }
-
-  Widget _buildNavBar() {
-    return Container();
   }
 }
