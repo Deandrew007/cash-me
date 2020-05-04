@@ -82,7 +82,33 @@ class _TransactionsPageState extends State<TransactionsPage> {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: ListView(
-                children: const <Widget>[
+                children: <Widget>[
+                  Card(
+                    child: ListTile(
+                      leading: Container(
+                        decoration: BoxDecoration(
+                            borderRadius:
+                                new BorderRadius.all(new Radius.circular(30.0)),
+                            border: new Border.all(
+                                color: Hexcolor("#2B2D80"), width: 3.0)),
+                        child: CircleAvatar(
+                          backgroundImage:
+                              AssetImage("assets/images/cersei.png"),
+                        ),
+                      ),
+                      title: Text('Cersei Lannister',
+                          style: TextStyle(
+                            color: Hexcolor("#2B2D80"),
+                          )),
+                      subtitle: Text(
+                        'Buy yourself those elephants',
+                      ),
+                      trailing: Column(children: [
+                        Text('Feb 22, 2020'),
+                        Text('Feb 22, 2020'),
+                      ]),
+                    ),
+                  ),
                   Card(
                     child: ListTile(
                       leading: FlutterLogo(size: 56.0),
@@ -123,15 +149,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                       trailing: Icon(Icons.more_vert),
                     ),
                   ),
-                     Card(
-                    child: ListTile(
-                      leading: FlutterLogo(size: 56.0),
-                      title: Text('Two-line ListTile'),
-                      subtitle: Text('Here is a second line'),
-                      trailing: Icon(Icons.more_vert),
-                    ),
-                  ),
-                     Card(
+                  Card(
                     child: ListTile(
                       leading: FlutterLogo(size: 56.0),
                       title: Text('Two-line ListTile'),

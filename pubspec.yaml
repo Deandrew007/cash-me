@@ -41,6 +41,8 @@ flutter:
 
   assets:
       - assets/images/undraw_transfer_money.png
+      - assets/images/cersei.png
+
       
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
