@@ -42,6 +42,11 @@ flutter:
   assets:
       - assets/images/undraw_transfer_money.png
       - assets/images/cersei.png
+      - assets/images/nigelclarke.jpeg
+      - assets/images/Tuwanie.png
+      - assets/images/annivee.jpg
+      - assets/images/me.jpg
+
 
       
   # An image asset can refer to one or more resolution-specific "variants", see
