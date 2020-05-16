@@ -1,3 +1,4 @@
+import 'package:cash_me/accounts.dart';
 import 'package:flutter/material.dart';
 import 'login_screen.dart';
 import 'transactions.dart';
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
       ),
       debugShowCheckedModeBanner: false,
-      home: TransactionsPage(),
+      home: Accounts(),
     );
   }
 }
