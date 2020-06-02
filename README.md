@@ -8,6 +8,8 @@ UI Design inspired @ https://xd.adobe.com/view/d293500d-f3b8-4029-4d9f-1319f592a
 
 ![login](screenshots/login.png)
 ![transactions](screenshots/transactions.png)
+![login test](screenshots/rsz_login.png)
+
 
 
 
