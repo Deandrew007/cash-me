@@ -1,16 +1,15 @@
 # cash_me
 
-A new Flutter project.
+An online payment app UI built in flutter (under construction)
 
-## Getting Started
+UI Design inspired @ https://xd.adobe.com/view/d293500d-f3b8-4029-4d9f-1319f592a54e-a4a2/grid by Tuwanie Morgan
 
-This project is a starting point for a Flutter application.
+## Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+![login](screenshots/login.png)
+![transactions](screenshots/transactions.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+

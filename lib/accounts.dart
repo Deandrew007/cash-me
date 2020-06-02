@@ -30,14 +30,14 @@ class _AccountsState extends State<Accounts> {
                       style: TextStyle(
                           fontSize: 22,
                           color: Colors.white,
-                          fontWeight: FontWeight.bold),
+                          fontWeight: FontWeight.normal),
                       children: <TextSpan>[
                         TextSpan(
                             text: 'Deandrew',
                             style: TextStyle(
-                                fontSize: 26,
+                                fontSize: 22,
                                 color: Colors.white,
-                                fontWeight: FontWeight.normal)),
+                                fontWeight: FontWeight.bold)),
                       ],
                     )),
                   ),
@@ -62,6 +62,9 @@ class _AccountsState extends State<Accounts> {
   }
 
 Widget _buildBody() {
+
+  bool isSwitched = true;
+
   return Container(
        margin: EdgeInsets.only(top: 170),
         height: double.maxFinite,
@@ -73,7 +76,21 @@ Widget _buildBody() {
           ),
           color: Colors.grey[200],
         ),
-        child: Column(),
+        child: Column(
+          children: <Widget>[
+            Text(
+              'Card Settings',
+              style: TextStyle(
+                color: Hexcolor("2B2D80"),
+                fontWeight: FontWeight.bold,
+                fontSize: 18
+              ),
+            ),
+            ListTile(
+              
+            )
+          ],
+        ),
   );
 }
 }
